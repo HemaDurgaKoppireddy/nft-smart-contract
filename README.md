@@ -1,4 +1,4 @@
-# NftCollection — ERC-721 Assignment
+# NftCollection — ERC-721 NFT Smart Contract
 
 ## Overview
 
