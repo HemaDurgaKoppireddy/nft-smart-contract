@@ -17,20 +17,26 @@ Contents:
 
 ## File structure
 
-nft-smart-contract/
-│
-├── contracts/
-│   └── NftCollection.sol
-│
-├── test/
-│   └── NftCollection.test.js
-│
-├── Dockerfile
-├── .dockerignore
-├── hardhat.config.js
-├── package.json
-├── package-lock.json
-└── README.md
++------------------------------+--------------------------------------------------------------+
+| Path / File                  | Description                                                  |
++------------------------------+--------------------------------------------------------------+
+| contracts/                   | Solidity contracts directory                                 |
+| └── NftCollection.sol        | Main ERC-721 style NFT contract (mint, transfer, approve)    |
++------------------------------+--------------------------------------------------------------+
+| test/                        | Hardhat test directory                                       |
+| └── NftCollection.test.js    | Full automated test suite (21 tests)                         |
++------------------------------+--------------------------------------------------------------+
+| Dockerfile                   | Builds image and runs tests inside Docker                    |
+| .dockerignore                | Files/folders excluded from Docker context                   |
++------------------------------+--------------------------------------------------------------+
+| hardhat.config.js            | Hardhat configuration (solidity version, plugins, mocha)     |
+| package.json                 | Project dependencies, scripts                                |
+| package-lock.json            | Locked dependency versions                                   |
+| README.md                    | Project documentation                                        |
++------------------------------+--------------------------------------------------------------+
+| node_modules/                | Installed dependencies (auto-generated)                      |
++------------------------------+--------------------------------------------------------------+
+
 
 
 
